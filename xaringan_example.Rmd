@@ -73,7 +73,7 @@ class: center, bottom, inverse
 
 ---
 
-# Hello Ninja
+# Hello Ninja, hello
 
 As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
 
