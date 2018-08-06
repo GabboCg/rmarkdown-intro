@@ -1,0 +1,81 @@
+---
+title: "Mi primer R Markdown"
+# header-includes:
+#  - \usepackage[spanish]{babel}
+#  - \usepackage{blindtext}
+author: "Gabriel Cabrera"
+date: "5 de agosto de 2018"
+geometry: "margin=1in"
+output:
+  pdf_document: 
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    fig_width: 6
+    fig_height: 4
+    fig_caption: false
+    df_print: kable
+  # citation_package: natbib
+    includes:
+        in_header: preamble.tex
+  html_document:
+    df_print: paged
+bibliography: biblio.bib
+biblio-style: unsrt
+link-citations: yes
+---
+
+
+# Pregunta 1: Utilizando el tidyverse
+
+## Pregunta 1.1 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+[@wickham2016r] 
+
+
+\Blindtext[3]
+
+```{r, fig.align='center', fig.height=4, fig.width=6, fig.cap="mi primer plot sin ggplot2", fig.pos = 'h'}
+plot(cars, pch = 18)
+```
+
+
+\Blindtext[1]
+
+```{r, out.width='25%', fig.align='center', fig.cap='...', fig.pos = 'h'}
+knitr::include_graphics('hex-rmarkdown.png')
+```
+
+
+\Blindtext[1]
+
+```{r tables-mtcars, fig.pos = 'h'}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```
+
+
+```{r, fig.align="center", fig.cap= "El output de una regresion por mco", fig.pos = "h"}
+fit = lm(dist ~ speed, data = cars)
+b   = coef(fit)
+plot(cars)
+abline(fit)
+```
+
+La pendiente de la regresión es `r b[1]`.
+
+\Blindtext[1]
+
+$$
+\Theta = \begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}
+$$
+
+\Blindtext[1]
+
+\bibliography{sample}
+\nocite{*}
