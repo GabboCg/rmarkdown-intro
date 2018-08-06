@@ -39,6 +39,13 @@ class: inverse, center, middle
 * Entender su capacidad para la investigación reproducible.
 * Conocer su versatilidad y real potencial.
 
+<br>
+
+>“It is a capital mistake to theorize before one has data.” 
+>
+>--- Sherlock Holmes, *A Study in Scarlett* (Arthur Conan Doyle).
+
+<br>
 
 <center>
 <iframe src="https://giphy.com/embed/3ohuAxV0DfcLTxVh6w" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/starwars-star-wars-episode-2-3ohuAxV0DfcLTxVh6w"></a></p>
@@ -107,7 +114,7 @@ La manera usual de compilar en R Markdown es dandole click al boton `knit` o con
 
 # Nuestro Primer Documento R Markdown: YAML
 
-YAML se define como un formato de serialización<sup>3</sup>, El encabezado YAML es un conjunto de pares llave:valor al comienzo de tu archivo. Comienza y termina elencabezado con tres rayas (- - -), por ejemplo:
+YAML se define como un formato de serialización (proceso de codificación de un objeto en un medio de almacenamiento, en este caso metadata), El encabezado YAML es un conjunto de pares llave:valor al comienzo de tu archivo. Comienza y termina elencabezado con tres rayas (- - -), por ejemplo:
 
 ```r
 ---
@@ -120,9 +127,9 @@ output: pdf_document
 
 Posterior a `---` comenzamos a escribir nuestro documento. 
 
-.footnote[
-[3] Proceso de codificación de un objeto en un medio de almacenamiento, en este caso metadata. 
-]
+<center>
+<iframe src="https://giphy.com/embed/HoffxyN8ghVuw" width="380" height="175" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/love-mini-hanger-HoffxyN8ghVuw"></a></p>
+</center>
 
 ---
 
@@ -137,7 +144,7 @@ Los siguientes son syntaxis de markdown, que son validas algunas con asterisco o
 * Para insertar imagen, `![imagen con extensión](/directorio/imagen con extensión)`
 
 <center>
-<iframe src="https://giphy.com/embed/OK27wINdQS5YQ" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mind-seinfeild-OK27wINdQS5YQ"></a></p>
+<iframe src="https://giphy.com/embed/OK27wINdQS5YQ" width="380" height="238" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mind-seinfeild-OK27wINdQS5YQ"></a></p>
 </center>
 
 ---
@@ -155,7 +162,7 @@ Con {-} se esconde el número.
 
 2. Listas 
 
-Listas no enumeradas comienzan con `*`, `-` o `+`, si se quiere crear una sublista se debe seguir **la regla de los cuatro espacios** (tener mucho ojo con esta regla, es muy util y nos puede ahorrar varios dolores de cabeza.). Por ejemplo:
+Listas no enumeradas comienzan con `*`, `-` o `+`, si se quiere crear una sublista se debe seguir **la regla de los cuatro espacios** (tener mucho ojo con esta regla, es muy util y nos puede ahorrar varios dolores de cabeza, sobre todo en el YAML). Por ejemplo:
 
 .pull-left[
 * unordered list
@@ -223,7 +230,7 @@ c & d
 $$
 ```
 
-En Html se usa Mathjax en la compilación y no una distribución $\TeX$.
+En Html se usa [Mathjax](https://www.mathjax.org/) en la compilación y no una distribución $\TeX$.
 
 ---
 
@@ -365,10 +372,49 @@ output:
 
 ---
 
+# No todo es PDF
+
+Existen dos *output* con R Markdown, documentos y presentaciones
+
+* beamer_presentation
+* github_document
+* html_document
+* ioslides_presentation
+* latex_document
+* md_document
+* odt_document
+* pdf_document
+* powerpoint_presentation
+* rtf_document
+* slidy_presentation
+* word_document
+
+---
+
+# Recomendaciones
+
+Existen lo que yo denomino la trilogía de R Markdown de [Yihui Xie](https://yihui.name/en/):
+
+1. [R Markdown: Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+2. [Bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+
+3. [Blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+
+
+<center>
+<iframe src="https://giphy.com/embed/q1mHcB8wOCWf6" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/homer-simpson-the-simpsons-reaction-q1mHcB8wOCWf6"></a></p>
+</center>
+
+---
+
 class: center, middle
 
-# Thanks!
+# Muchas Gracias
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+<iframe src="https://giphy.com/embed/l2R0eYcNq9rJUsVAA" width="380" height="188" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/latelateshow-james-corden-late-show-l2R0eYcNq9rJUsVAA"></a></p>
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+Slides creadas por la librería de R [**xaringan**](https://github.com/yihui/xaringan).
+
+El chakra proviene [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), y [R Markdown](https://rmarkdown.rstudio.com).
